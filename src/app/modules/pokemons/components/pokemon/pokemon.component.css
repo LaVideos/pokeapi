@@ -1,0 +1,29 @@
+.pokemon-container{
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  flex: 25%;
+  height: 50px;
+  margin: 8px;
+  display: flex;
+  flex-direction: row;
+  transition: 500ms;
+  text-decoration: none;
+}
+
+.pokemon-container:hover,.active-link{
+  box-shadow: rgb(55, 97, 168) 0 0 0 3px,
+  rgb(31, 193, 27) 0 0 0 6px,
+  rgb(254, 202, 27) 0 0 0 9px,
+  rgb(255, 156, 85) 0 0 0 12px,
+  rgb(239, 83, 80) 0 0 0 15px;
+}
+.pokemon-name-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.pokemon-text{
+  color: #676767;
+  font-weight: 500;
+}

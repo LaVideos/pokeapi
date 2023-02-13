@@ -1,0 +1,16 @@
+.header-container{
+  width: 100% ;
+  background: #ef5350;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  position: fixed;
+  top: 0;
+}
+
+.pokeapi-png{
+  height: 80px;
+  padding: 5px;
+}

@@ -1,0 +1,8 @@
+<div class="ability-container" *ngIf="ability">
+  <div class="ability-name" >Ability : {{ability.ability.name}}</div>
+  <div class="ability-hidden">Is hidden : {{ability.is_hidden}}</div>
+  <div class="ability-slot">
+    <a class="link" href="{{ability.ability.url}}">more ability data</a>
+    <div matBadge="{{ability.slot}}" matBadgeOverlap="false" matBadgeColor="accent" class="slot-text">Slot</div>
+  </div>
+</div>

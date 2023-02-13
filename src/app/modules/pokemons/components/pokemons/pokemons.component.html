@@ -1,0 +1,16 @@
+<!--<div *ngIf="{pokeObj}">{{pokeObj|json}}</div>-->
+
+<div class="container">
+  <div class="pokemons-first-part-container"  *ngIf="pokeObj">
+    <div class="pokemons-container">
+      <app-pokemon class="pokemon-container" *ngFor="let pokemon of pokeObj?.results" [pokemon]="pokemon"></app-pokemon>
+    </div>
+    <div class="btn-container">
+      <button disabled="{{!pokeObj.previous}}"  class="btn" mat-button (click)="prev()">prev</button>
+      <button disabled="{{!pokeObj.next}}" class="btn" mat-button (click)="next()">next</button>
+    </div>
+  </div>
+  <div class="outlet">
+    <router-outlet></router-outlet>
+  </div>
+</div>

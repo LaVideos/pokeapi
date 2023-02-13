@@ -1,0 +1,29 @@
+.ability-container{
+  padding: 10px;
+
+}
+
+.ability-name{
+  background: #EF5350FF;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.ability-hidden{
+background: #FF9C55FF;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.ability-slot{
+  display: flex;
+  justify-content: space-between;
+}
+
+.link{
+  font-size: 14px;
+}
+
+.slot-text{
+margin-right: 30px;
+}

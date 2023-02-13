@@ -1,0 +1,7 @@
+<div class="types-container" *ngIf="type">
+  <div class="types-name">Type name - {{type.type.name}}</div>
+  <div class="types-slot">
+    <a class="link" href="{{type.type.url}}">more type data</a>
+    <div matBadge="{{type.slot}}" matBadgeOverlap="false" matBadgeColor="warn" class="slot-text">Slot</div>
+  </div>
+</div>

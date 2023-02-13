@@ -1,0 +1,27 @@
+<div class="pokemon-detail-container" *ngIf="pokemon">
+  <div class="pokemon-img-container"><img class="pokemon-img" src="{{pokemon.sprites?.['front_default']}}" alt=""></div>
+  <div><span class="pokemon-title">{{pokemon.name.toUpperCase()}}</span></div>
+  <div class="abilities-container">
+    <div class="center"><span>Abilities</span>
+      <button mat-icon-button (click)="ShowAbilities()">
+        <mat-icon *ngIf="!showAbility">keyboard_arrow_down</mat-icon>
+        <mat-icon *ngIf="showAbility">keyboard_arrow_up</mat-icon>
+      </button>
+    </div>
+    <div *ngIf="showAbility">
+      <app-abilities  *ngFor="let ability of pokemon.abilities" [ability]="ability"></app-abilities>
+    </div>
+  </div>
+  <div class="types-container">
+    <div class="center">
+      <span>Types</span>
+      <button mat-icon-button (click)="ShowTypes()">
+        <mat-icon *ngIf="!showType">keyboard_arrow_down</mat-icon>
+        <mat-icon *ngIf="showType">keyboard_arrow_up</mat-icon>
+      </button>
+    </div>
+    <div *ngIf="showType">
+      <app-types *ngFor="let type of pokemon.types" [type]="type"></app-types>
+    </div>
+  </div>
+</div>
